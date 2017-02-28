@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>ribbon</title>
+    </head>
+    <style>
+    *{
+    padding:0px;
+    margin:0px;
+}
+.ribbon1{
+    width:600px;
+    background-color:orange;
+    text-align:center;
+    padding:7px;
+    margin-left:300px;
+    margin-top:40px;
+    
+    
+}
+
+h1{
+    color:white;
+}
+.ribbon1:before{
+     content: "";
+    position: absolute;
+    width:600px;
+     border-top: dashed 2px #AF5B00;
+    padding: 0;
+     left:307px;
+     top:43px;
+     }
+.ribbon1:after{
+     content: "";
+    position: absolute;
+    width:600px;
+    border-top: dashed 2px #AF5B00 ;
+    
+     left:307px;
+     top:86px;
+     
+}
+
+.ribbon2{
+    width:600px;
+    background-color:orange;
+    text-align:center;
+    padding:10px;
+    margin-left:300px;
+    margin-top:40px;
+}
+.ribbon2:before{
+     content: "";
+    position: absolute;
+    width:600px;
+    border-top: solid 5px white;
+    
+     left:307px;
+     top:134px;
+     
+}
+.ribbon2:after{
+     content: "";
+    position: absolute;
+    width:600px;
+    border-top: solid 5px white;
+    
+     left:307px;
+     top:180px;
+     
+}
+h1.content1:before {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 25px 25px;
+    border-color: transparent transparent transparent white;
+    position: absolute;
+    top: 41px;
+     left:300px;
+}
+h1.content2:before {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 0 25px 30px;
+    border-color: transparent transparent transparent white;
+    position: absolute;
+    top: 132px;
+    right:1018px;
+}
+
+h1.content1:after {
+    content: " ";
+    height: 0;
+    border-style: solid;
+    border-width: 30px 25px 25px 0;
+    border-color: transparent white transparent transparent;
+    position: absolute;
+    left:890px;
+    top:38px;
+    }
+h1.content2:after {
+    content: "";
+    height: 0;
+    border-style: solid;
+    border-width: 30px 25px 25px 0;
+    border-color: transparent white transparent transparent;
+    position: absolute;
+    left:895px;
+    top:133px;
+
+
+}
+
+    </style>
+    <body>
+        <div class="wrapprer">
+        <div class="ribbon1">
+             <h1 class="content1">Welcome To OXO</h1>
+        </div>
+        <div class="ribbon2">
+            <h1 class="content2">Welcome to Darlic</h1>
+        </div>
+        </div>
+    </body>
+</html>
